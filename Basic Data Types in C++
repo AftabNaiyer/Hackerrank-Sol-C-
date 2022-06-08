@@ -1,0 +1,30 @@
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+int main() {
+    // Complete the code.
+    int a;
+    long b ; 
+    char c ;
+    float d;
+    double e;
+
+     cin >> a >> b >> c >> d >> e;
+     printf("%d\n%ld\n%c\n%0.3f\n%0.9lf",*&a,*&b,*&c,*&d,*&e);
+
+    return 0;
+}
+
+LOGIC:-
+
+In this problem you are asked to input 6 variables each of a different data type. As seen in the problem Input and Output it’s easier to take input using cin and cout or you could still use printf and scanf. Now the tricky part is while trying to print the floating and double values. You need to use setprecision() which is available in the iomanip library. To know more about it, click here
+
+If you are using printf to print the float and double variables, you could set the precision in this way
+
+printf(“%.3f”, e); //It prints the floating point accurately up to 3 decimal places.
+
+
+Above solution is done using printf() function , but we can also use std::setprecision() function
+
+Here is the second code.
